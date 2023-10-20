@@ -1,10 +1,31 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
+
+export default {
+  components: {
+    AppHeader,
+    AppMain,
+    AppFooter
+  },
+  data() {
+    return {
+    }
+  },
+  methods: {
+  },
+  mounted() {
+  }
+}
+
 </script>
 
 <template>
   <div>
-    
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
   </div>
 
 </template>
